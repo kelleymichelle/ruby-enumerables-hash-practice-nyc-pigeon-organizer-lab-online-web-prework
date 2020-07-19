@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(pigeon_data)
         if !bird_box.has_key?(pig)
         # binding.pry
           bird_box[pig] = {color: [], gender: [], lives: []}
-          bird_box[pig][key] << k
+          bird_box[pig][key] << k.to_s
         else
           bird_box[pig][key] << k.to_s
         end
