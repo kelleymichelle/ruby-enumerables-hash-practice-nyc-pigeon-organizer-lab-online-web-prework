@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(pigeon_data)
     value.each do |k, v|
       v.each do |pig|
         binding.pry
+        bird_box.has_key?
       end
     end
   end
