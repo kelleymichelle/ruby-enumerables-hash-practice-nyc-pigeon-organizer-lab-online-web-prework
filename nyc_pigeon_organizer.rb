@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(pigeon_data)
           bird_box[pig] = {color: [], gender: [], lives: []}
           bird_box[pig][key] << k
         else
-          bird_bx[pig][key] << k
+          bird_box[pig][key] << k
         end
       end
     end
