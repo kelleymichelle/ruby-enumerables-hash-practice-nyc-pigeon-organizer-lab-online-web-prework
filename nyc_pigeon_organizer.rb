@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(pigeon_data)
     value.each do |k, v|
       v.each do |pig|
         # if !bird_box.has_key?(pig)
-        binding.pry
+        # binding.pry
           # bird_box[pig] = {color: [], gender: [], lives: []}
           bird_box[pig][key] << k
         # end
