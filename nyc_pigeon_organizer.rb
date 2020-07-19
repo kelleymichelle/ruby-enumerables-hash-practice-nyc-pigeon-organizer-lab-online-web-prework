@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(pigeon_data)
     value.each do |k, v|
       v.each do |pig|
         if !bird_box.has_key?(pig)
-          bird_box[pig] = {}
+          bird_box[pig] = {color: [], gender: [], lives: []}
         end
         # binding.pry
       end
