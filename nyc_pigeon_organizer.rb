@@ -1,22 +1,18 @@
 require 'pry'
-def nyc_pigeon_organizer(data)
-  pigeons = {}
-  data.each do |k, v|
-    v.each do |new_v, names|
-      names.each do |name|
 
-        if !pigeons[name]
-          pigeons[name] = {}
+def nyc_pigeon_organizer(pigeon_data)
+  bird_box = {}
+  pigeon_data.each do |key, value|
+    value.each do |k, v|
+      v.each do |pig|
+        if !bird_box.has_key?(pig)
+          bird_box[pig] = {color: [], gender: [], lives: []}
+          bird_box[pig][key] << k.to_s
+        else
+          bird_box[pig][key] << k.to_s
         end
-
-        if !pigeons[name][k]
-          pigeons[name][k] = []
-        end
-
-        pigeons[name][k] << new_v.to_s
-
       end
     end
   end
-  pigeons  
+  return bird_box
 end
