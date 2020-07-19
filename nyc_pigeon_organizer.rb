@@ -1,5 +1,5 @@
 require 'pry'
 
-def nyc_pigeon_organizer
+def nyc_pigeon_organizer(pigeon_data)
   
 end
